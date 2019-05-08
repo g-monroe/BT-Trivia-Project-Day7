@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriviaGame.Engines", "Trivi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriviaGame.DataAccessHandlers", "TriviaGame.DataAccessHandlers\TriviaGame.DataAccessHandlers.csproj", "{01370948-63F8-4D20-A738-8A8A9D7CCFC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriviaGame.Web", "TriviaGame.Web\TriviaGame.Web.csproj", "{04C2ABFD-2ABF-41B7-B455-FCCFE0BDDAC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriviaGame.Web", "TriviaGame.Web\TriviaGame.Web.csproj", "{04C2ABFD-2ABF-41B7-B455-FCCFE0BDDAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriviaGame.Core", "TriviaGame.Core\TriviaGame.Core.csproj", "{AA7E1ECE-74EF-4CDC-A943-27D2BC413703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{04C2ABFD-2ABF-41B7-B455-FCCFE0BDDAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04C2ABFD-2ABF-41B7-B455-FCCFE0BDDAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04C2ABFD-2ABF-41B7-B455-FCCFE0BDDAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7E1ECE-74EF-4CDC-A943-27D2BC413703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7E1ECE-74EF-4CDC-A943-27D2BC413703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7E1ECE-74EF-4CDC-A943-27D2BC413703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7E1ECE-74EF-4CDC-A943-27D2BC413703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
