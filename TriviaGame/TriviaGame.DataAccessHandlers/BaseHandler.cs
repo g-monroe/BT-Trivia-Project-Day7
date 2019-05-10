@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using Microsoft.EntityFrameworkCore;
 using TriviaGame.Core.Interfaces.DataAccessHandlers;
 using TriviaGame.Core.Models;
+using TriviaGame.DataAccessHandlers.Infrastructure;
 
 namespace TriviaGame.DataAccessHandlers
 {
@@ -14,7 +14,7 @@ namespace TriviaGame.DataAccessHandlers
         protected readonly DbSet<T> _dbSet;
         protected readonly DbContext _context;
 
-        public BaseHandler(DbContext context)
+        public BaseHandler(TriviaGameContext context)
         {
             _context = context;
             _dbSet = context.Set<T>();
@@ -52,12 +52,12 @@ namespace TriviaGame.DataAccessHandlers
 
         public IEnumerable<T> Get(Expression<Func<T, bool>> where)
         {
-            return _dbSet.Where(where);
+            return _dbSet.Where(where).ToList();
         }
 
         public IEnumerable<T> GetAll()
         {
-            return _dbSet;
+            return _dbSet.ToList();
         }
 
         public T GetById(int id)
@@ -67,7 +67,7 @@ namespace TriviaGame.DataAccessHandlers
 
         public IEnumerable<T> GetByIds(IEnumerable<int> ids)
         {
-            return _dbSet.Where(e => ids.Contains(e.Id));
+            return _dbSet.Where(e => ids.Contains(e.Id)).ToList();
         }
 
         public T Insert(T entity)
