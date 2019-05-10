@@ -9,9 +9,8 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddDataAccessHandlers(this IServiceCollection services, string connectionString)
         {
-            services.AddScoped(provider => new TriviaGameContext(connectionString)); 
-            services.AddDbContext<TriviaGameContext>(ServiceLifetime.Scoped);
-            services.AddEntityFrameworkSqlServer();
+            services.AddScoped<TriviaGameContext>(); 
+            services.AddDbContext<TriviaGameContext>(options => options.UseSqlServer(connectionString));
 
             services.AddTransient<IToDoHandler, ToDoHandler>();
 
