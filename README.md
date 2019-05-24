@@ -37,7 +37,7 @@ Resuable chunks of business logic should go here, with an accompanying interface
 > Loading, Saving, Updating are usually good cases
 
 ### Managers
-Larger workflow management, should make heavy use of the engine functionality you have available
+Larger workflow management, should make heavy use of the engine functionality you have available.  
 Add an accompanying interface in the core project.
 > These should probably be 1-to-1 with each Controller method in the web project
 
