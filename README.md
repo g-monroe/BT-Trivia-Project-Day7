@@ -16,11 +16,11 @@
 
 
 ## Running the Project
-Open the solution file.
-Build
-Run "Update-Database"
-In the `TriviaGame.Web/ClientApp` folder, `npm install`
-Start IIS Express. (This will automatically run `npm start` for you)
+Open the solution file.   
+Build  
+Run "Update-Database"  
+In the `TriviaGame.Web/ClientApp` folder, `npm install`  
+Start IIS Express. (This will automatically run `npm start` for you)  
 
 
 ---
