@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>SuperheroBattle.BusinessLogic.Managers</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SuperheroBattle.Core\SuperheroBattle.Core.csproj" />
+    <ProjectReference Include="..\SuperheroBattle.DataAccessHandlers\SuperheroBattle.DataAccessHandlers.csproj" />
+  </ItemGroup>
+
+</Project>
